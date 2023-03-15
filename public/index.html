@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="./dist/style_out.css" rel="stylesheet">
+  <script src="index.js" defer></script>
+</head>
+
+<!-- <body class="bg-bg-#5A6679"> -->
+<body class="bg-hexagon_pattern bg-fixed bg-cover">
+  <div class=" min-h-full">
+    <!-- The navbar -->
+    <nav class=" bg-gray-800 ">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between h-16">
+          <div id="button-menu" class="flex items-center">
+            <div class="flex-shrink-0">
+              <a class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">
+                DOCK6</a>
+            </div>
+            <div class="hidden md:block">
+              <div  class="ml-10 flex items-baseline space-x-4">
+                <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+
+                <a href="#" id="lets_dock"
+                  class="text-gray-300 hover:bg-gray-700 hover:text-white hover: px-3 py-2 rounded-md text-sm font-medium"
+                  aria-current="page">Let's dock!</a>
+
+                <a href="#"
+                  class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">About</a>
+
+                <a href="#"
+                  class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Members</a>
+                <a href="https://dock.compbio.ucsf.edu/Online_Licensing/index.htm" target="_blank"
+                  class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Obtain
+                  DOCK6 license</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- second tier navbar -->
+    <nav id="secNavBar" class="text-white bg-bg-gray-800-monochromatic drop-shadow-2xl top-0 h-auto opacity-0 scale-95 z-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex-auto mx-auto py-3">
+          <div class="px-28 mx-auto flex space-x-10">
+            <a id="what-btn"
+              class="text-gray-300 hover:bg-gray-600 hover:text-white px-3 py-2 rounded-md text-sm font-medium">
+              Pose Reproduction
+            </a>
+            <a id="prep-btn"
+              class="text-gray-300 hover:bg-gray-600 hover:text-white px-3 py-2 rounded-md text-sm font-medium">
+              Prepare Files
+            </a>
+            <a id="grid-btn"
+              class="text-gray-300 hover:bg-gray-600 hover:text-white px-3 py-2 rounded-md text-sm font-medium">
+              Generate Grid
+            </a>
+            <a id="dock-btn"
+              class="text-gray-300 hover:bg-gray-600 hover:text-white px-3 py-2 rounded-md text-sm font-medium">
+              DOCK!
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    
+
+    <div id="replace" style="width: 100%; height: 100%; float: left;"></div>
+
+    <!-- home pag e -->
+    <div id="homePage">
+
+      <!-- First subsection -->
+      <div class="flex justify-center">
+        <div class="bg-zinc-600 mt-2 rounded-lg max-w-[876.547px] drop-shadow-2xl">
+          <h1 class="m-10 text-6xl text-white text-center font-mono"> DOCK6 </h1>
+          <h1 class="m-10 text-[50px] text-white text-center font-mono"> Molecular docking on the command line. </h1>
+
+            <div class="flex">
+              <div class=" bg-zinc-800	flex-1 rounded-xl m-5 drop-shadow-2xl w-[398.281px] h-[330.398px] ">
+                <div class=" rounded-xl flex justify-start">
+                  <div class=" mx-1 my-2 rounded-full bg-red-500    h-4 aspect-square border-solid border-2 border-red-800"></div>
+                  <div class=" mx-1 my-2 rounded-full bg-yellow-500 h-4 aspect-square border-solid border-2 border-yellow-800"></div>
+                  <div class=" mx-1 my-2 rounded-full bg-green-500  h-4 aspect-square border-solid border-2 border-green-800"></div>
+
+
+                </div>
+                <div class=" grid content-center min-h-full">
+                  <div class="mx-4">
+
+                    <div class="flex justify-center max-w-fit">
+                      <div class=" text-white flex-none mr-2 animate-hide1 ">></div>
+                      <div class="flex-1">
+                        <h1 class=" font-mono text-left overflow-hidden animate-typeWriter            whitespace-nowrap tracking-widest text-white">dock6 -i input.in -o output.out</h1>
+                      </div>
+                    </div>
+
+                    <div class="flex justify-center max-w-fit">
+                      <div class=" text-white flex-none mr-2 animate-hide2 ">></div>
+                      <div class="flex-1">
+                        <h1 class=" font-mono text-left overflow-hidden animate-typeWriter2 whitespace-nowrap tracking-widest text-white">Molecules docked!</h1>
+                      </div>
+                    </div>
+
+                  </div>
+
+                </div>
+            
+              </div>
+              <div class="bg-zinc-800 h-[330.398px] w-[398.281px] m-5 flex-1 rounded-2xl">
+                 <img src="./img/growth_tree.gif" class="  h-[330.398px] w-[398.281px] rounded-2xl drop-shadow-2xl animate-gifHide"> </img>
+              </div>
+            </div>
+    
+
+
+          <!-- </div> -->
+
+          <!-- <p class="flex-1 mx-10 test-justify text-white">
+            DOCK6 is a molecular modeling program used to identify potential binding geometries and interactions of a molecule to a target. 
+            It can be used on the command line 
+          </p>   -->
+
+  
+          <div class="flex-1 flex justify-evenly">
+            <a href="https://dock.compbio.ucsf.edu/Online_Licensing/index.htm" target="_blank" 
+              class="bg-zinc-800 w-65 h-28 text-center text-white text-2xl my-5 ml-2 mr-0 p-10 rounded-2xl drop-shadow-2xl hover:bg-gray-300 hover:text-black">
+              Obtain License</a>
+            <a href="https://dock.compbio.ucsf.edu/DOCK_6/dock6_manual.htm" target="_blank" 
+              class="bg-zinc-800 w-65 h-28 text-center text-white text-2xl my-5 p-10 rounded-2xl drop-shadow-2xl hover:bg-gray-300 hover:text-black">
+              Manual</a>
+            <a href="https://dock.compbio.ucsf.edu/DOCK_6/new_in_6.9.txt" target="_blank" 
+              class="bg-zinc-800 w-65 h-28 text-center text-white text-2xl my-5 ml-0 mr-2  p-10 rounded-2xl drop-shadow-2xl hover:bg-gray-300 hover:text-black">
+              Changes in V6.9</a>
+          </div>
+
+
+
+
+        </div>
+      </div>
+
+      <!-- second subsection -->
+      <div class="flex justify-center   my-10">
+        <div class="bg-zinc-600 min-w-[876.547px] max-w-[876.547px] rounded-lg drop-shadow-2xl">
+          <h1 class="mx-10 mt-10 mb-2 text-4xl text-white text-left font-mono"> Discover new drugs with DOCK6</h1>
+          <p class ="mx-10 mt-2 text-lg text-white font-sans text-justify">
+            DOCK6 is a molecular modeling program used to identify potential binding geometries and interactions of a molecule to a target. Anchor-and-grow is the main 
+            algorithm that samples many structural poses. The above animation is an illustration of how anchor-and-grow would look like if DOCK6 was running. 
+            While a library of molecules is sampling against the target site, DOCK6 can score each molecule on-the-fly with energy and shape-based scoring functions. 
+            It features a full-fledged docking software, where calculations are done at the terminal.
+          </p>
+
+          <h1 class="mx-10 mt-5 mb-2 text-4xl text-white text-left font-mono"> Why should I use it? Here are some reasons:</h1>
+        </div>
+
+      </div>
+
+
+      
+      <!-- The footer -->
+      <div class="flex justify-center my-10">
+        <p class="flex justify-center mx-80 p-4 text-black border-2 border-black rounded-md">
+          DOCK6 is developed by the Rizzo Group. <a
+            href="https://ringo.ams.stonybrook.edu/~rizzo/StonyBrook/index.html" target="_blank"><img class=" ml-2 w-6 h-6"
+              src="./img/rizzo_logo.png"></a>
+        </p>
+      </div>
+
+      <a class="flex justify-center my-10" href="https://www.freepik.com/vectors/hexagon-abstract">Hexagon abstract vector created by starline - www.freepik.com</a>
+    </div>  
+
+
+  </div>
+
+  <script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.17.2/firebase-app.js";
+    import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.17.2/firebase-analytics.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+  
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    const firebaseConfig = {
+      apiKey: "AIzaSyB7Ba1v5XykXJ3zBiTnEIjbqL96a3f3t4E",
+      authDomain: "moldb-fd3cc.firebaseapp.com",
+      projectId: "moldb-fd3cc",
+      storageBucket: "moldb-fd3cc.appspot.com",
+      messagingSenderId: "676084260422",
+      appId: "1:676084260422:web:273bdbca98e857a69f3447",
+      measurementId: "G-C94KHBSHPS"
+    };
+  
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app);
+  </script>
+
+</body>
+
+</html>
